@@ -1,0 +1,102 @@
+.env
+
+# Voir https://help.github.com/articles/ignoring-files/ pour plus d'informations sur la syntaxe des fichiers .gitignore.
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+
+# Si vous utilisez des dossiers de gestion de médias par défaut pour les téléchargements
+media
+
+# Si votre configuration de base de données inclut des fichiers db.sqlite3
+*.sqlite3
+
+### Environnements virtuels ###
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+### environnements virtuels de VS Code ###
+.vscode/
+__pycache__/
+
+### Packages ###
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+*.egg-info/
+.installed.cfg
+lib/
+lib64/
+__pycache__/
+*.py[cod]
+*.so
+
+### PyInstaller ###
+#   Généralement créé via un fichier `*.spec`, mais inclut également souvent du code de démarrage python.
+*.manifest
+*.spec
+
+### Installer des dossiers ###
+pip-log.txt
+pip-delete-this-directory.txt
+
+### Distribution / Emballage ###
+.Python
+develop-eggs/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+### Cython ###
+*.c
+*.so
+
+### Jupyter Notebook ###
+.ipynb_checkpoints
+
+### pyenv ###
+.python-version
+
+### Editor ###
+# Eclipse
+.project
+.pydevproject
+
+# Environments
+.venv/
+env/
+ENV/
+venv/
+venv.bak/
+env.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+*.ipr
