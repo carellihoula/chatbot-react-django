@@ -1,4 +1,5 @@
 .env
+myenv
 
 # Voir https://help.github.com/articles/ignoring-files/ pour plus d'informations sur la syntaxe des fichiers .gitignore.
 
