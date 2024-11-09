@@ -18,14 +18,14 @@ def query(payload):
 def chatbot_response(request):
     user_message = request.POST.get('message', '')
     logger = logging.getLogger(__name__)
-    word_limit = 2040  # Adjust the word limit as needed
+    word_limit = 1000  # Adjust the word limit as needed
     
     def generate():
         payload = {
             "inputs": user_message,
             "parameters": {
-                "max_new_tokens":1000, # Le nombre maximal de nouveaux tokens que le modèle générera.
-                "do_sample": True,  # Active l'échantillonnage pour introduire de la variabilité et de la créativité.
+                "max_new_tokens":1000, # The maximum number of new tokens the model will generate.
+                "do_sample": True,  # Activate sampling to introduce variability and creativity.
             }
         }
         try:
